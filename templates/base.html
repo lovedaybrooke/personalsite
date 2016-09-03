@@ -18,10 +18,10 @@
 	     	{% if page != "working" %}<h5><a href="/working" class="working">Working</a></h5>{% endif %}
 		    <h2 class="{{ page }}">{{ page|title }}</span></h2>
 		 </div>
-		 <div class="content">
+		 <div class="content {{ page }}">
 		 	{% block content %}{% endblock %}
 		</div>
-		 <div class='bottom-nav'>
+		 <div class='bottom-nav {{ page }}'>
 		    <h3><a class="{{ page }}" href="http://www.twitter.com/lovedaybrooke">@lovedaybrooke</a><a class="{{ page }}" href="">katmatfield@gmail.com</a></h3>
 		 </div>
 		 </div>

@@ -9,7 +9,6 @@ main {
 	margin: 0px auto;	
 }
 
-
 h1, h2, h3 {
 	font-family: 'Droid Serif', serif;
 	letter-spacing: 0.5px;
@@ -75,30 +74,29 @@ h3 a:hover, h5 a:hover, li a:hover, p a:hover {
 	border-bottom: 2px solid;
 }
 
-h2.making, a.making:hover, main.home a.making {
+h2.making, div.making a:hover, main.home a.making, h5 a.making:hover {
 	color: #168ADE;
 }
 
-h2.working, a.working:hover, main.home a.working {
+h2.working, div.working a:hover, main.home a.working, h5 a.working:hover {
 	color: #FF6764;
 }
 
-h2.reading, a.reading:hover, main.home a.reading {
+h2.reading, div.reading a:hover, main.home a.reading, h5 a.reading:hover {
 	color: #FDBD74;
 }
 
-h2.writing, a.writing:hover, main.home a.writing {
+h2.writing, div.writing a:hover, main.home a.writing, h5 a.writing:hover {
 	color: #54BF86;
 }
 
-h2.talking, a.talking:hover, main.home a.talking {
+h2.talking, div.talking a:hover, main.home a.talking, h5 a.talking:hover {
 	color: #9C93DE;
 }
 
 a.home:hover {
 	color:  #323031;
 }
-
 
 div.nav {
 	border-bottom: 3px #E6E6E6 solid;	
