@@ -1,0 +1,55 @@
+{% extends "blog.html" %}
+
+{% block title %}
+
+<h2 class="{{ page }}" style="margin-bottom:0.6em;">Iteration Metadata</h2>
+<h3 class="{{ page }}" style="margin-top:0px; margin-bottom: 2.2em;">February 2013</h2>
+{% endblock %}
+
+{% block content %}
+<h4>The problem</h4>
+
+<p>There’s no perfect task management tool; you can only look for one that’s good enough for a particular project and a particular team. This shouldn’t be a controversial opinion, but task management tools seem to inspire near religious fervor from their users.</p>
+
+<p>At Adaptive Lab, the least worst option for us at the moment is Asana. We’ve been using Asana for about 18 months, after switching from Pivotal Tracker.</p>
+
+<img src="/static/images/task-management-chart.png" alt="Diagram comparing the features and flexibility of different task management tools">
+
+<p>Pivotal Tracker exists at nearly the opposite end of the scale from Asana: it’s feature rich, but also very opinionated about how its users should behave. Asana lacks some of the power-user functionality but is much more flexible – in, fact, it’s flexible enough that we use it to manage both our recruitment and employee on-boarding, and our tasks on client projects.</p>
+
+<p>The one thing I miss from Pivotal Tracker is the automatic calculation of statistics like the number of points currently in an iteration. There’s also a field explicitly for recording the points for a user story. Asana doesn’t offer anything like this… but it does have a nice API. You can see where this is going.</p>
+
+<h4>Resisting the DIY urge</h4>
+
+<p>I think it's important to state this clearly: I did not build another task management tool. Even though that seems to be the default response. Pivotal Labs couldn’t find the perfect task management tool for them, so they built Pivotal Tracker. 37 Signals had a few niggles with the tool they used, so they built BaseCamp. A better task management tool seems to be the tech version of a better mousetrap.</p>
+
+<p>Instead, I built the least I could. I've co-opted the MVP principle for how teams works rather than just what they build. Doing the least we can is an important guiding principle for how we do our work as well as what we build.</p>
+
+<h4>Building the least I could</h4>
+
+<p>Instead of building a whole new system, I built a thin layer to sit on top of Asana. It’s essentially a database, a web interface, and a process that collects data from the Asana API and crunches it into various statistics. I built the first version in Python on Google App Engine, over the course of a couple of weekends.</p>
+
+<p>It gives me some of the absolute must-haves for project managing our flavor of agile process that aren’t currently available from Asana:</p>
+
+<ul>
+<li>how many points did we get through last iteration for this project?</li>
+<li>how many points did this developer get through last iteration?</li>
+<li>what’s the variance between predicted and actual points for each iteration/project/developer?</li>
+<li>Without these I had to manually calculate and update these figures in a spreadsheet. One of my most consistently correct product heuristics is that <strong>there’s almost certainly a better way to accomplish any task that is currently done with a spreadsheet</strong>.</li>
+</ul>
+
+<p>Then it displayed various views of this information on a web interface. I quickly realised that this would be a good place to store the notes from the retrospectives that we have at the end of each iteration, so the next feature added was a way to upload and review these notes.</p>
+
+<h4>Version two and beyond</h4>
+
+<p>The next major upgrade for this product was to move it across to Heroku from Google App Engine, so I could use Django instead of GAE’s slightly strange Django-like set up, and could store all the data in a proper Postgres database that anyone could query using SQL. GAE has its own strange version of a SQL database with a frustrating query language that I’ve never managed to master. GAE is a great tool for beginners and is still my favourite way to get a simple app running in no time flat, but its limitations really start to chafe after a while.</p>
+
+<p>The next thing on my wishlist is automatically calculated burn-down charts. Again, these are something I’m doing manually in Google spreadsheets at the moment, because Asana offers no other way to track how we’re progressing through the work of an iteration. This will also be a great chance to get to grips with D3 (or another charting tool).</p>
+
+<h4>What I learnt</h4>
+
+<p>As a product manager, I don’t have quite the same experience of building an MVP as a developer. The trade-offs are still hard, but I’m one step removed from the experience of writing code to handle those trade-offs. Coding my own MVP helps to fill in those gaps, and make it easier for me to empathise with developers.</p>
+
+<p>This project has also encouraged me to think of more of the rote aspects of my job that can be automated. The kind of product strategy work we do at Adaptive Lab requires time set aside for strategic and creative thought, so the less time I spend doing easily-automatable work, the better my strategy and creative work will be. From the company’s point of view and from my own, this is entirely win-win.</p>
+
+{% endblock %}

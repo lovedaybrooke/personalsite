@@ -1,0 +1,83 @@
+{% extends "blog.html" %}
+
+{% block title %}
+
+<h2 class="{{ page }}" style="margin-bottom:0.6em;">Bridging the gap between actual and reported behavior</h2>
+<h3 class="{{ page }}" style="margin-top:0px; margin-bottom: 2.2em;">May 2015</h2>
+{% endblock %}
+
+{% block content %}
+<p>Henry Ford famously said that if he’d asked his customers what they wanted, he would have built a faster horse, instead of the world’s first mass-market motor car. Ford maintained this cynical attitude towards his customers’ stated preferences throughout his career. For instance, the Model T Ford came in “any colour that [the customer] wants, so long as it is black.” Ford’s attitude can seem outdated in the era of human-centred design, but it teaches an important lesson: products are improved by listening to what users want—and not necessarily what they <strong>say</strong> they want.</p>
+
+<p>One of the hardest lessons to learn in UX is that researchers can’t always trust what test participants tell them. People don’t always behave rationally, and this means that research participants are sometimes unable to give accurate answers to even the simplest questions. Though it sounds counter-intuitive, it’s backed by <a href="http://danariely.com/the-research/">decades of research</a> on the difference between reported behavior (what we say we do) and actual behavior (what we actually do).</p>
+
+<p>I encountered the gap recently, while researching how to improve smartphone banking apps. I asked two sets of users whether they wanted the app log-in process to be more convenient or more secure. Depending on whether I asked them while using their app or removed from the process, the question garnered strikingly different responses. When I observed people using their banking apps, they told me that the security requirements for logging in were too rigorous. They’d prefer a less secure, more convenient log-in process. Yet, when we sent a survey to other banking app users, their responses were the exact opposite. These users said they’d like more security, even at the expense of convenience.</p>
+
+
+<p>Most UX researchers will encounter this kind of inconsistency at some point in their careers. It could arise in research, or it could come when the research results are implemented. Occasionally this gap is responsible for a feature or product idea that flops on release, even though research indicated users would love it.</p>
+
+<p>By understanding the reasons for this gap between what users say and do, we can learn to bridge it.
+
+<h4>Why the actual/reported behavior gap exists</h4>
+
+<p>Behavioral psychologists have long understood that people are not entirely rational creatures. We’re influenced by a range of factors, from emotion to cognitive biases, which make a less rational choice seem more appealing—such as eating ice cream for dinner, or buying a car we can’t really afford. There are dozens of these biases, but we’ll focus on three particularly common ones that encourage users to bend the truth.</p>
+
+<h4>Social desirability and conformity</h4>
+<p>Social desirability is the wish to be as we perceive others wanting us to be. In other words, people will sometimes respond based on what they think they should say, do or want. The survey respondents in my app research felt that they should be concerned about security, even at the expense of convenience, just as everyone knows they should eat a healthy diet and drink in moderation.</p>
+
+<p>We’re much more likely to skirt the truth when the question we’re asked has a societally accepted ‘right answer’. This behavior is known as the ‘social desirability bias’, and it has been shown to affect behavior across a wide range of areas. Researcher <a href="http://epubs.scu.edu.au/cgi/viewcontent.cgi?article=1001&context=hahs_pubs">Thea F van de Mortel’s paper on the social desirability response bias</a> lists some of the many studies in which researchers have measured the impact of social desirability. These include research into whether people accurately report their voting intentions, and whether they lie about how often they exercise.</p>
+
+<p>Researchers can minimize the impact of social desirability on users by using a neutral tone of voice, framing questions to be as open as possible, and presenting options as equal, where one option is not better than the others.</p>
+
+<p>The herd effect is another powerful influence on users’ behavior. People’s desire to fit in with their peers is so powerful that they will even reject an answer they truly believe to be correct, so they can select the same answer as other participants!</p>
+
+<p>The most extreme example of this comes from the <a href="https://explorable.com/asch-experiment">Asch conformity experiments</a>, conducted in the 1950s. Research subjects were shown several lines of different length, and asked to select the two of equal length. The subject didn’t know that everyone else answering the question was a confederate of the researchers. The planted participants would sometimes unanimously give an incorrect answer and, 37% of the time, the real research subject agreed with them.</p>
+
+<p>Common research practices already have some defences against the herd effect. For instance, the practice of interviewing or observing users one-on-one, rather than in groups, is designed to minimize both their ability and desire to mimic others. Researchers can also make sure they don’t let slip when one option is more popular among other test subjects.</p>
+
+<h4>Wishful thinking</h4>
+
+<p>Another problem user researchers face is users’ propensity for wishful thinking. People sometimes say what they’d like to be true, rather than what is true (there’s a subtle but important difference between this and social desirability). For instance, a study by Ole Svenson in 1981 found that 80% of respondents believed themselves to be in the 30% of drivers. They can’t all be right; it’s a mathematical impossibility.</p>
+
+<p>This tendency to view our own behavior and capabilities optimistically is sometimes called the <a href="http://www.publicradio.org/columns/prairiehome/posthost/2013/04/01/the_lake_wobegon_effect.php">“Lake Woebegon effect”</a>. The name comes from a fictional town created by Garrison Keillor, in which “all the women are strong, all the men are good looking, and all the children are above average.” When we’re under the influence of the Lake Woebegon effect, our self-image doesn’t match up to reality. But that self-image still influences how we respond to questions about our intentions, rationale, or preferences.</p>
+
+<p>I’ve encountered this in some research into online security. My team was exploring mass market interest in a service that would offer education in preserving security on the web. A majority of the people we spoke to said that they wouldn’t need this advice, because they already knew how to protect themselves. Later in the interviews, it became clear that most people had rudimentary knowledge at best, and it was often wildly incorrect.</p>
+
+<p>This is a hard problem to guard against, because users honestly believe they’re telling the truth. However, one simple way to avoid answers based on wishful thinking is to ask about certainties. Instead of asking what users would do in hypothetical future scenarios, researchers should focus on what users have done in real situations in the recent past.</p>
+
+<h4>Differing contexts and mindsets</h4>
+
+<p>It goes without saying, but people respond differently in different contexts. When I asked people struggling to log into their banking app about security and convenience, their frustration in the moment led to a desire for more convenience. The app users responding to the survey weren’t feeling that same frustration. More significantly, they didn’t predict that they would feel frustrated by security measures in the future.</p>
+
+<p>Context is both external and internal. We behave differently at home than at a store, at work, or when visiting relatives. We respond differently when we’re tired, distracted, excited or intently focused. Since context has such a strong influence on our state of mind, we often find it hard or impossible to predict how we’ll respond to a particular scenario until we’re in it.</p>
+
+<p>Daniel Kahnman suggests another reason we can’t predict our own behavior in his book <a href="https://www.amazon.co.uk/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576">Thinking, Fast and Slow</a>. He explains that people have two very different mindsets. The “system one” mindset is fast, instinctive and driven by emotion. The ‘system two’ mindset is just the opposite: slower, more deliberate and more rational. When people attempt to predict what they’ll do in a particular context, they use system two to weigh the options rationally. When they actually make a decision, they’ll use system one, which responds instinctively.</p>
+
+<p>We can’t entirely prevent system two from influencing research results, but we can reduce its impact. Researchers can create a research environment that mimics the real world. If users will use the app in a loud or distracting area, for example, conduct testing in a cafe or open-plan office. Researchers can also visit the space where the product would be used while planning testing. Even if it’s not possible (or sensible) to recreate these environments, researchers can consider the differences between the test space and reality when interpreting research results.</p>
+
+<p>It’s worth noting that researchers can also (accidentally) influence subjects’ frame of mind, and actually distort text results. For instance, a polite conversation about a recent holiday, intended to relax the participant, might make the participant more open to accepting new ideas.</p>
+
+<p>I made just this mistake in my research into online security. I asked users to rate their level of concern at the end of our session, and found the results suspiciously high. Our 30 minute discussion on risks and potential consequences had, unsurprisingly, induced a spike in their usually low levels of concern.</p>
+
+<p>In my next set of tests, I asked about concern at the beginning of sessions, users were in a more natural mindset, and again at the end. I saw an increase in concern over the course of the session from every subject. In this case, both the first and second concern ratings were useful. The first rating showed me people’s ‘resting state’, while the second was evidence that sharing security information could increase people’s interest in protecting themselves.</p>
+
+<h4>Bridging the Gap</h4>
+
+<p>There are a few ways to circumvent deception and increase the value of our users’ answers. These techniques aren’t a panacea, but they are helpful tools for getting closer to reality in user research.</p>
+
+<ul>
+<li><strong>Observe users.</strong> If possible, observe users’ actual behavior in the real world, or use records of actual behavior like analytics. What test participants do is far more indicative than what they say.</li>
+
+<li><strong>Test in the same context as usage, or as close as possible.</strong> It’s nearly impossible for people to predict how they’d behave in a different context. The smaller the difference between testing and reality, the more accurate results will be.</li>
+
+<li><strong>Ask about specifics.</strong> Instead of asking how often users take a particular action, ask “when was the last time…”, or how often they’ve taken the action this week.</li>
+
+<li><strong>Ask about past experiences.</strong> Whether we’re optimists or pessimists, our view of the future is always a little distorted by our cognitive biases. Our memory of recent events is more accurate. Instead of asking about future intentions, ask about what participants have already done.</li>
+
+<li><strong>Make all answers equally acceptable.</strong> Maintaining a neutral demeanour reassures users that they won’t be judged for their answer. They may feel more comfortable giving real answers, as opposed to a ‘right’ answer.</li>
+
+<li><strong>Frame questions objectively.</strong> It’s easy to make questions reflect assumptions or expectations of correct behavior. If someone brushes their teeth once a fortnight, asking if they brush once or twice a day may elicit a false response. Asking instead, “how often do you brush your teeth?” will elicit more honest answers.</li>
+
+<li><strong>Learn more about cognitive biases and other irrational behavior.</strong> Understanding all the distorting influences on users will make it easier to guard against them in testing. The <a href="http://coglode.com/">Cognitive Lode site</a>, and the books <a href="https://www.amazon.co.uk/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576">Thinking, Fast and Slow</a> and <a href="https://www.amazon.co.uk/dp/B002RI9QJE">Predictably Irrational</a> are good places to start.</li></ul>
+
+{% endblock %}

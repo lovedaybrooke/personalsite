@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+	 <h4>Python</h4>
+	 <p>I taught myself Python in 2011, so I could start building apps that scratched my own itches. Here are some of the things I've made since then.</p>
+	 <ul class="nodots">
+		 <li><a class="{{ page }}" href="http://gender-decoder.katmatfield.com">Gender Decoder</a> is a tool to identify subtle gender-coding in job ads.</li>
+		 <li><a class="{{ page }}" href="http://shelvd.katmatfield.com">Shelvd</a> is a reading logger inspired by James Bridle's <a>Bkkeepr</a>.</li>
+		 <!--<li>Pocket Accountant was a simple daily reminder, to help me keep my finances on track.</li>-->
+		 <li><a class="{{page}}" href="https://github.com/lovedaybrooke/diceware/blob/master/README.md">Diceware</a> is a simple tool to generate strong, memorable passwords</li>
+		 <li><a class="{{page}}" href="/writing/iteration-metadata">Iteration Metadata</a> was the missing statistics layer on top of Asana.</li>
+	</ul>
+
+	<h4 id="">Food & drink</h4>
+
+	<p>My growing geeky interest in what I consume has inspired me to construct a cocktail bar and a microbrewery in my home. I'm currently experimenting with a red ale made with hops which give a blackcurrant aroma; trying to perfect my porter before winter; making DIY tonic from scratch; and barrel-aging a  Vieux Carré in a single-litre white oak barrel.</p>
+
+	<p>After trying many different ways of storing favourite cocktail recipes, I've started using these recipes cards that I designed and printed onto Moo business cards.</p>
+
+	<figure><img src="/static/images/cocktail-cards-backs.png" /><img style="margin-left: 0.5em" src="/static/images/cocktail-cards-recipes.png"/></figure>
+
+
+	<h4>Other things</h4>
+
+	<p>In 2014 I did a workshop on photographing electromagnetic fields at the Science Museum. It was run by designers Luke Sturgeon and Shamik Ray, who have spent quite some time developing their technique. They use an app that detects and visualises electromagnetic fields using an iPhone/Android smartphone's sensors, and long-exposure photography to do a kind of light painting. <a class="{{page}}" href="http://lukesturgeon.co.uk/2013/07/visualising-electromagnetic-fields/">Read more about their work here</a>.</p>
+
+	<p>Click the image below to see some of the photos taken by my lab partner Omar and me.</p>
+
+	<figure><a href="https://www.dropbox.com/sh/2yk1lju269uut7h/AAB-mvH656dz8G5b0pbY0Gmfa?dl=0" class="{{page}}" ><img src="/static/images/emf-photography-1-small.jpeg"></a></figure>
+{% endblock %}

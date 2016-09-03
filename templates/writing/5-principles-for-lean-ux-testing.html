@@ -1,0 +1,67 @@
+{% extends "blog.html" %}
+
+{% block title %}
+
+<h2 class="{{ page }}" style="margin-bottom:0.6em;">5 principles for lean UX testing</h2>
+<h3 class="{{ page }}" style="margin-top:0px; margin-bottom: 2.2em;">May 2013</h2>
+{% endblock %}
+
+{% block content %}
+
+<p>UX testing isn’t just a natural fit for the Lean methodology: it’s an essential tool. UX testing gives you the “why” to explain the “what” provided by Google Analytics or similar measurement tools. Say you’ve just added a killer new feature, but your Google Analytics data shows that users are ignoring it. Why? Maybe it’s hard to find; maybe the link or button text is offputting; maybe the flow’s confusing. A quick burst of user testing can help find the answer(s), so you can make a targeted, effected response to the problem, rather than just guessing.</p>
+
+<p>And yet too many people doing Lean ignore UX testing, because they think it’s a nice-to-have rather than a need-to-have, or that it’s hard to do, or expensive. That doesn’t have to be true. Here are five principles for successful integrating UX testing into your Lean process.</p>
+
+<h4>1. UX is not polish</h4>
+
+<p>Remember what UX stands for: user experience. It’s everywhere in your product, not just a layer on top. You could have the best idea in the world, but ignore the experience of using your site/app/new kitchen gadget, and it’s certainly going to fail.</p>
+
+<p>From a Lean point of view, bad UX is noise masking the signal. If you want to test whether people are interested enough in your new product idea to sign up, spending a little time thinking about the UX means that your results will actually reflect people’s interest – not whether they can find the sign-up button or whether they can be bothered to fill in your long, confusing form.</p>
+
+<p>Further reading: Aral Balkan’s excellent blog post on <a href="https://ar.al/notes/design-is-not-veneer/" class="{{page}}">why design is not ‘veneer’</a>, making similar points about the centrality of design to a product.</p>
+
+<h4>2. Test early and often</h4>
+
+<p>People often think UX testing requires a testing lab, dozens of test subjects, and weeks of work from a team of expert researchers. So they wait until they can afford all this stuff before running a test, and then they only test once.</p>
+
+<p>This is a mistake.</p>
+
+<p>In reality, a handful of users will be able to identify the majority of problems with your product; even one user will find a large percentage of the issues on their own. Some of the most revealing UX tests we’ve ever done took one user less than 5 minutes, and were completely free.</p>
+
+<p>And, if you don’t need to wait til you can afford UX testing, why wait at all? Running a series of small, focused tests lets you can catch problems early, and steer away from the wrong path before you’ve gone too far down it. The longer you wait, the more time, money and momentum you’ll have wasted.</p>
+
+<p>Further reading: UX guru Jakob Nielsen’s post on <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" class="{{page}}">why you only need to test with 5 users</a></p>
+
+<h4>3. Choose your measurements carefully</h4>
+
+<p>This one should be familiar from other aspects of Lean. It may sound obvious, but every user test should be designed to answer a specific question/questions, and you should know before you start what sort of answer you’re looking for.</p>
+
+<p>There’s a temptation with UX testing to just ask what users think of your site, and if they like it. But that results you’d get from this kind of test aren’t going to help you decide what you need to change, add, or remove. And when you use this kind of fuzzy data, you’re more likely to shape the ‘results’ into the answers you want.</p>
+
+<p>Quantitive, observable data is your friend here. Don’t ask “do you like this site”; ask “on a scale of 1 to 10, how likely would you be to use this site”. Avoid asking people if they understand: you’ll only find out if they think they understand. Instead use measurements like the number of seconds it takes users to complete a task, or the number of unsuccessful attempts they make to discover whether they really understand.</p>
+
+<p>Further reading: This <a href="https://www.youtube.com/watch?v=BRCHNa36IhE" class="{{page}}">video on the “Texas Sharpshooter fallacy”</a> explains how easy it is to delude yourself into seeing the answers you want in your data.</p>
+
+<h4>4. Rethink the Minimum Testable Product</h4>
+
+<p>What if the product or feature you want to test isn’t finished yet? No problem: don’t test the product.</p>
+
+<p>There are a dozen quick and dirty ways of testing without using your actual product. You can make paper prototypes, or turn Balsamiq wireframes into a clickable mock website, or upload images of your designs to InVision to make a more high-fidelity interactive prototype.</p>
+
+<p>People often dismiss these methods (especially paper prototyping) because they don’t look and act exactly like the real website, and people assume this will distract users and distort testing results. But you’d be surprised how quickly people suspend their disbelief and start using the prototype just like they’d use a website.</p>
+
+<p>All of these quick and dirty Minimum Testable Products/Features will tell you important things about whether users can navigate through your site, discover features, follow the flow you expect them too, and much more. They just won’t tell you if users like your colour scheme.</p>
+
+<p>Read more: Here’s a great introduction to the leanest prototyping tool out there: <a class="{{page}}" href="http://alistapart.com/article/paperprototyping">paper prototypes</a>.</p>
+
+<h4>5. Get out of the bubble</h4>
+
+<p>When people doing Lean do try UX testing, they often do what’s called “hallway user testing”: stopping someone walking past their desk, or their office, or making tea in the kitchen and getting them to quickly try out their product. This ‘guerrilla testing’ is fast, it’s easy and it’s free. What’s not to like?</p>
+
+<p>The big disadvantage of guerilla testing is the sample bias. Think about who you share your office/building/kitchen with: it’s usually other people working in tech or start-ups. Unless this is your target audience, testing with them won’t give you all the information you need – and it’ll often lead you astray. For instance, tech folk are often power-users who’ll ask for loads more features than your average user. They often love novelty, so they’ll rave about a cutting-edge gestural interface that will confuse others.</p>
+
+<p>By all means, use guerilla testing (especially if this gives you access to your target audience). But also step outside your filter bubble and test with other users. Cheap online tools like WhatUsersDo, ClickTest, ChalkMark, Five Second Test, Optimal Sort (and more) make it possible to get rapid feedback from different types of people.</p>
+
+<p>UX testing is an essential part of your Lean toolbox – and it can be as fast, cheap and easy as you need it to be. So what are you waiting for?</p>
+
+{% endblock %}

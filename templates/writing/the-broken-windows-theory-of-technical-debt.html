@@ -1,0 +1,40 @@
+{% extends "blog.html" %}
+
+{% block title %}
+
+<h2 class="{{ page }}" style="margin-bottom:0.6em;">The Broken Windows Theory of Technical Debt</h2>
+<h3 class="{{ page }}" style="margin-top:0px; margin-bottom: 2.2em;">November 2014</h2>
+{% endblock %}
+
+{% block content %}
+<p>No matter how you prioritise your backlog, it’s always a challenge to deal with technical debt.</p>
+
+<p>Martin Fowler has a pretty good explanation of what technical debt is, and the obvious risks it brings:</p>
+
+<blockquote>Doing things the quick and dirty way sets us up with a technical debt, which is similar to a financial debt. Like a financial debt, the technical debt incurs interest payments, which come in the form of the extra effort that we have to do in future development because of the quick and dirty design choice.</blockquote>
+
+<p>However, even some of the best prioritisation techniques out there, tend to treat technical debt as an afterthought. This is a dangerous habit to get into. When you convince yourself that you’ve taken account of the extra time and effort required in your planning, it’s easy to justify carrying that debt for a long time.</p>
+
+<p>But there’s another side-effect of carrying even small amounts of technical debt that’s harder to spot, and so harder to avoid. It’s an emergent problem that arises from the combination of lots of little bits of technical debt, and the best way I can describe it is by comparing it to the Broken Windows Theory.</p>
+
+<h4>What’s wrong with broken windows?</h4>
+
+<p>‘Broken Windows’ is a theory about crime developed by sociologists in the 1980s. It states that when low level crimes like vandalism (e.g. breaking windows of buildings) are ignored, soon larger and more serious crimes start to happen. Broken windows set a new norm of behaviour for the community, which is slightly closer to the criminal or anti-social, and people adjust their behaviour accordingly. It’s a vicious cycle that gradually causes a neighbourhood to become more and more run down and dangerous.</p>
+
+<p>Products can have broken windows too. When short-term solutions or quick and dirty fixes build up in your code, these act like vandalism and neglect in a neighbourhood. We see the same kind of knock-on effects: if the code’s already ugly and hard to work with, adding one more quick and dirty fix feels like less of a big deal. And so without ever consciously making a decision to do so, the developers working on that product lower their standards for the quality of their own contributions. Why bother doing excellent work if it’s the only good code in the product, or if you suspect it’ll soon be overwritten by a nasty workaround?</p>
+
+<p>This doesn’t only affect developers; it’s almost certainly affecting you too. You’re becoming more willing to build up technical debt, and less likely to prioritise paying it off. You started off tolerating broken windows, and now you’ve got epidemic car theft and are on the path to gang warfare.</p>
+
+<h4>Fixing broken windows</h4>
+
+<p>I found myself in exactly this situation early in my product career. My team and I were working on a huge new feature for an existing product, struggling to meet the deadline, and cutting corners as we went. We never felt like we were building up huge technical debt because each cut corner felt so small on its own. But, by the time we’d delivered the feature, the product resembled the kind of neighbourhood we’d be scared to walk through even in broad daylight.</p>
+
+<p>The solution to a product in this situation is the same as for a neighbourhood. You fix the windows that are already broken and you make it a high priority to rapidly fix any new breakages that occur. It takes time to undo the damage though, so don’t try to fix everything at once. Identify the biggest, ugliest, most painful and embarrassing problem in the codebase and make it the top priority to tackle this first. To do this, you’ll have to communicate with your team about the situation you’ve found yourselves in. Admitting to each other that you’ve not been doing your best work – and committing to changing that – is just as important as the big symbolic fix.</p>
+
+<h4>Preventing broken windows</h4>
+
+<p>Once you’ve cleaned up your neighbourhood you need to ensure it will never get into the same state again. Here’s where we come back to prioritisation. Today, when I weigh up the priorities of new or improved features versus paying off technical debt, I stop and think about the broken windows in the neighbourhood. I ask other people on the team about the broken windows they see, that perhaps I’ve missed. By making sure we’re not letting quick and dirty fixes build up in the first place, we not only keep giving our product our best work but we avoid the emergent side-effects I’ve described here.</p>
+
+<p>While it may take us a little longer to deliver those exciting new features, we know we’re building a better product and the whole team is proud of our work when we get there.</p>
+
+{% endblock %}

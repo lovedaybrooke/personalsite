@@ -1,0 +1,40 @@
+{% extends "blog.html" %}
+
+{% block title %}
+
+<h2 class="{{ page }}" style="margin-bottom:0.6em;">Security Theatre, dark patterns and the ethics of design</h2>
+<h3 class="{{ page }}" style="margin-top:0px; margin-bottom: 2.2em;">July 2014</h2>
+{% endblock %}
+
+{% block content %}
+
+<p>What ethical responsibilities do designers have to their users?</p>
+
+<p>Let me explain. I’m currently working on a project that, at its simplest, aims to design a service that protects its users online. To do this, the service needs users to hand over some of their personal data – and the more data the users give it, the more effectively it can protect them. (This project is still in ‘stealth mode’, so please forgive the lack of detail.)</p>
+
+<p>Through talking to our target users, we’ve learnt that people have strong concerns about the security ramifications of a service like this holding lots of their data. But we’ve also learnt that the signals of security they’re seeking are superficial. These are ordinary people with an ordinary level of technical knowledge, so they’re (usually) not looking for https or ssl, for a product that salts and hashes sensitive data instead of storing it in the clear. They’re looking for padlock icons, for the colour blue and for reassuring microcopy like "bank-level security".</p>
+
+<p>They’re looking for ‘security theatre’. This term was coined by <a class="{{page}}" href="https://www.schneier.com/blog/archives/2009/11/beyond_security.html">security expert Bruce Schneier</a> to refer to highly visible ‘countermeasures’ to a particular threat that make people feel more secure without actually making them more secure. The best example is probably airport security, in which we are required to remove nail scissors or fluids from cabin baggage, even though these are unlikely to be used in an attack.</p>
+
+<p>As we refine our prototypes of this service, we’ve added in more and more elements of security theatre, and we’re seeing much more trust and confidence from the people who test-drive these prototypes for us.</p>
+
+<figure>
+	<img src="/static/images/security-theatre.jpg" alt="A sketch of different elements of security theatre, from our project working wall" />
+	<figcaption>A sketch of different elements of security theatre, from our project working wall</figcaption>
+</figure>
+
+<p>But we haven’t even started thinking about how we might actually securely store and transmit the users’ data. This is one of the dangers Bruce Schneier associates with security theatre: that the performance of security distracts from improvements in actual security. In this case, we will certainly address the real security of the service later on in this project, so it’s not this issue that’s concerning me.</p>
+
+<p>Instead, I’m concerned that our use of security theatre is contributing to a false understanding of the markers of security.</p>
+
+<p>In our case, we’re matching signifiers of security with a real commitment to security behind the scenes. But every time a product uses security theatre as a promise to users that they’re really making things secure, it reinforces the false understanding that security theatre is real security, or is a reliable indicator of security. This, in turn, makes it possible for unscrupulous or lazy product-makers to trick people into believing a product is secure when the product’s creators haven’t bothered to make it secure behind the scenes.</p>
+
+<p>In essence, will security theatre become a <a class="{{page}}" href="http://darkpatterns.org/">dark pattern</a>: an interface that’s designed to trick its users?</p>
+
+<p>The service we’re designing includes a strong educational element in which we help people understand the risks they’re exposed to online and how to effectively combat them. But, being realistic, we can’t expect that all our users will listen or care if we try to educate them on the difference between real security and padlock icons.</p>
+
+<p>We’re left with a choice between a service with a greater chance of success and a greater usefulness to its users, that relies on and reinforces this misunderstanding; or a service that refuses to use the expected markers of security and consequently confuses or worries users, if it can get anyone to use it in the first place.</p>
+
+<p>There’s no easy answer, in this case, and perhaps that’s a good thing. Instead of ticking off the ethical concerns, we have to continually engage with them throughout the design and build process, and over the lifetime of our users’ interaction with the system. Beyond this project, I’ll be continuing to read and explore ways in which we can incorporate consideration of ethical concerns into our design process.</p>
+
+{% endblock %}
