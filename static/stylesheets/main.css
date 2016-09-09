@@ -139,6 +139,34 @@ li {
 	color: #323031;
 }
 
+li.book {
+   background:url('/static/images/book-icon.png') 0% 0% no-repeat no-repeat;
+   padding-left: 40px;
+   line-height: 32px;
+   margin: 20px 0px;
+}
+
+li.blog {
+   background:url('/static/images/article-icon.png') 0% 0% no-repeat no-repeat;
+   padding-left: 40px;
+   line-height: 32px;
+   margin: 20px 0px;
+}
+
+li.video {
+   background:url('/static/images/video-icon.png') 0% 0% no-repeat no-repeat;
+   padding-left: 40px;
+   line-height: 32px;
+   margin: 20px 0px;
+}
+
+li.podcast {
+   background:url('/static/images/headphones-icon.png') 0% 0% no-repeat no-repeat;
+   padding-left: 40px;
+   line-height: 32px;
+   margin: 20px 0px;
+}
+
 figure {
 	margin: 0px;
 	padding: 1em 0em 1em 0em;
