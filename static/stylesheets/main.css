@@ -31,6 +31,11 @@ h2 {
 	line-height: 1.6em;
 }
 
+h3 {
+	font-size: 1.4em;
+	margin: 2em 0em 1em 0em;
+}
+
 h4 {
 	font-size: 1.2em;
 	margin: 2.2em 0em 1em 0em;
@@ -96,6 +101,18 @@ h2.talking, div.talking a:hover, main.home a.talking, h5 a.talking:hover {
 
 a.home:hover {
 	color:  #323031;
+}
+
+a.button {
+	font-family: 'Droid Serif', serif;
+	font-size: 1.2em;
+	padding: 10px;
+	width: 200px;
+	margin: 25px auto 50px auto;
+	text-align: center;
+	border: 1px solid black;
+	background-color: #FAFAFC;
+	display: block;
 }
 
 div.nav {

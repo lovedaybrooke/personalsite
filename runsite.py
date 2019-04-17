@@ -22,6 +22,10 @@ def blog(titleslug=None):
     return render_template('/writing/{0}.html'.format(titleslug),
         page="writing")
 
+@app.route('/what-is-alexa')
+def alexa():
+    return render_template('what-is-alexa.html')
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
