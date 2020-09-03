@@ -31,6 +31,5 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 shortcuts = {
-        "research-irrational-world": "/writing/research-irrational-world",
-        "latest-CV": "/static/documents/Kat Matfield CV – Nov 2019.pdf"
+        "research-irrational-world": "/writing/research-irrational-world"
     }
